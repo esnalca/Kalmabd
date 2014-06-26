@@ -17,7 +17,7 @@ include("includes/header.php")
                             <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
                                 <h3>Añadiendo anuncios seccion</h3><hr/>
                                 <div class="container borde">
-                                    <form role ="form" style="width:400px;" action="guardaranun.php"  method="POST" >
+                                    <form role ="form" enctype="multipart/form-data" style="width:400px;" action="guardaranun.php"  method="POST" >
                                         <div class="required-field-block">
                                             <input type="text" placeholder="Titulo" name="tit" class="form-control">
                                             <div class="required-icon">
@@ -25,8 +25,7 @@ include("includes/header.php")
                                             </div>
                                         </div>
                                         <div class="required-field-block">
-                                            <input type="file" placeholder="Imagen" name="archivo" class="form-control"/>
-                                            <input type="text" placeholder="Imagen" name="img" class="form-control">
+                                            <input type="file" placeholder="Imagen" name="archivo" class="form-control">
                                             <div class="required-icon">
                                             <div class="text">*</div>
                                             </div>
