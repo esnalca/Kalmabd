@@ -1,0 +1,1 @@
+﻿INSERT INTO `tabla` (`campo`, `campo`, `campo`, `campo`) VALUES (NULL, 'valor', 'valor')
