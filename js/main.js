@@ -1,3 +1,6 @@
-$('.carousel').carousel({
-	interval:3000
-})
+$(function() {
+    $('.required-icon').tooltip({
+        placement: 'left',
+        title: 'Required field'
+        });
+});

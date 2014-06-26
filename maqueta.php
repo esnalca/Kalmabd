@@ -16,6 +16,29 @@ include("includes/header.php")
                             </div>
                             <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 borde">
                                 <h3 class="borde">Añadiendo anuncios seccion</h3><hr/>
+                                <div class="container borde">
+                                    <form role ="form" style="width:400px; ">
+                                        <div class="required-field-block">
+                                            <input type="text" placeholder="Titulo" class="form-control">
+                                            <div class="required-icon">
+                                            <div class="text">*</div>
+                                            </div>
+                                        </div>
+                                        <div class="required-field-block">
+                                            <input type="text" placeholder="Imagen" class="form-control">
+                                            <div class="required-icon">
+                                            <div class="text">*</div>
+                                            </div>
+                                        </div>
+                                        <div class="required-field-block">
+                                            <textarea rows="3" class="form-control" placeholder="Descripcion"></textarea>
+                                            <div class="required-icon">
+                                            <div class="text">*</div>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-primary">Send</button>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
