@@ -35,8 +35,8 @@
         <nav class="navbar navbar navbar-default navbar-fixed-top logme fondom" role="navigation">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Cambios BD</span>
-                    <span class="icon-bar">Anuncios Seccion</span>
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
@@ -44,7 +44,7 @@
                <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav separar">
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="ofertas.html">Ofertas</a></li>
+                    <li><a href="contenido.php">Contenido</a></li>
                     <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Tratamientos <b class="caret"></b></a>
                         <ul class="dropdown-menu tamtext2 ">
                             <li><a href="faciales.html">Faciales</a></li>
