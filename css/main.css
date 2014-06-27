@@ -120,10 +120,6 @@ footer{
     margin-top: 10px;
 }
 .borde{
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 0px;
-    margin-right: 0px;
     border: 1px solid black;
 }
 .text{
