@@ -12,7 +12,7 @@
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/main.css">
-
+        <link rel="stylesheet" href="css/select2.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>

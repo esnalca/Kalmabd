@@ -15,7 +15,7 @@ include("includes/header.php");
 				$sql="INSERT INTO  `kalmap`.`anupor` (`tit` ,`des` ,`img`)
 					  VALUES ('$tit',  '$des',  '$img')";
 				$res=mysqli_query($link,$sql);	
-				header("Location:maqueta.php?a=2");
+				header("Location:conun.php?a=2");
 			}		
 			}
 	}else{
