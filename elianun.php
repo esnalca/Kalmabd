@@ -1,4 +1,4 @@
-<?
+<?php
 include("includes/conexion.php");
 $combo=$_POST["combo"];
 $sql="DELETE FROM `anupor` WHERE  `id` = $combo";

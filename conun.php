@@ -1,4 +1,4 @@
-<?
+<?php
 include("includes/header.php")
 ?>
         <div class="container">
@@ -15,7 +15,7 @@ include("includes/header.php")
                                     <a href="conun.php?c=1" ><li class="color">Cambiar</li></a>
                                 </ul>
                             </div>
-                            <?
+                            <?php
                             if($_GET["a"]==1){
                                 include("includes/datos/forma.html");
                                 }if($_GET["a"]==2){
@@ -26,19 +26,15 @@ include("includes/header.php")
                                             echo "<h2>Anuncio eliminado correctamente</h2>";
                                         }if($_GET["c"]==1){
                                          include("includes/datos/formc.php");
-                                            }if($_GET["e"]==2){
+                                            }if($_GET["c"]==2){
                                                 echo "<h2>Anuncio cambiado</h2>";
                                             }
-
-
-                            
-
                             ?>
                         </div>
                     </div>
                 </div>
             </section>
         </div>
-<?
+<?php
 include("includes/footer.php")
 ?>
