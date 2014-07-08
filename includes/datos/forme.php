@@ -1,4 +1,4 @@
-<?
+<?php
 include("includes/conexion.php");
 $sql="SELECT * FROM anupor";
 $res=mysqli_query($link,$sql);

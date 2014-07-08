@@ -1,5 +1,5 @@
 <?php
-include("includes/header.php")
+include("includes/header.php");
 ?>
         <div class="container">
             <section>
@@ -17,7 +17,7 @@ include("includes/header.php")
                             </div>
                             <?php
                             if($_GET["a"]==1){
-                                include("includes/datos/forma.html");
+                            }if($_GET["a"]==1){include("includes/datos/forma.html");
                                 }if($_GET["a"]==2){
                                     echo "<h2>Anuncio añadido correctamente</h2>";
                                     }if($_GET["e"]==1){
@@ -36,5 +36,5 @@ include("includes/header.php")
             </section>
         </div>
 <?php
-include("includes/footer.php")
+include("includes/footer.php");
 ?>
