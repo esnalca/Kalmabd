@@ -34,6 +34,7 @@ $num=mysqli_num_rows($res);
                     <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
             <form role ="form"  style="width:400px;" action="conun.php?m=1"  method="POST" >
                     <input type="text" value="<?=$filac["tit"]?>" name="tit" class="form-control"><br/>
+                    <input type="hidden" name="id" value="<?=$filac["id"]?>">
                     <textarea rows="3" class="form-control" name="des" ><?=$filac["des"]?></textarea><br/>
                 <button class="btn btn-primary fondom">Guardar</button>
             </form>
@@ -45,6 +46,10 @@ $num=mysqli_num_rows($res);
                 $id=$_POST["id"];
                 $tit=$_POST["tit"];
                 $des=$_POST["des"];
-  
+                $sqlm="UPDATE  `kalmap`.`anupor` SET  `tit` =  '$tit',`des` = '$des' WHERE  `anupor`.`id` =$id;";
+                $resm=mysqli_query($link,$sqlm);
+                echo $id;
+                echo $sqlm;
+                
   ?>
 
