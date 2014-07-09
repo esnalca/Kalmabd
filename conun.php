@@ -17,18 +17,22 @@ include("includes/header.php");
                             </div>
                             <?php
                             if($_GET["a"]==1){
-                            }if($_GET["a"]==1){include("includes/datos/forma.html");
+                            }if($_GET["a"]==1){include("includes/anun/forma.html");
                                 }if($_GET["a"]==2){
                                     echo "<h2>Anuncio añadido correctamente</h2>";
                                     }if($_GET["e"]==1){
-                                        include("includes/datos/forme.php");
+                                        include("includes/anun/forme.php");
                                         }if($_GET["e"]==2){
                                             echo "<h2>Anuncio eliminado correctamente</h2>";
                                         }if($_GET["c"]==1){
-                                         include("includes/datos/formc.php");
+                                         include("includes/anun/formc.php");
                                             }if($_GET["c"]==2){
                                                 echo "<h2>Anuncio cambiado</h2>";
-                                            }
+                                            }if($_GET["m"]==1){
+                                                include("includes/anun/formm.php");
+                                                   }if($_GET["m"]==2){
+                                                    echo "<h2>Anuncio modificado</h2>";
+                                                    }
                             ?>
                         </div>
                     </div>
