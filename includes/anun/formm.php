@@ -3,6 +3,10 @@ include("includes/conexion.php");
 $sql="SELECT * FROM anupor";
 $res=mysqli_query($link,$sql);
 $num=mysqli_num_rows($res);
+
+if (empty($_POST["combo"])) {
+    
+
 ?>
 <div class="container ">
 <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
@@ -23,6 +27,7 @@ $num=mysqli_num_rows($res);
         </div>
 </div>
   <?php
+  }else{
                 if (isset($_POST["combo"])){
                     $combo=$_POST["combo"];
                 }if (!empty($combo)) {
@@ -32,7 +37,8 @@ $num=mysqli_num_rows($res);
   ?>
                 <div class="container ">
                     <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
-            <form role ="form"  style="width:400px;" action="conun.php?m=1"  method="POST" >
+                        <h3>Modificando <?=$filac["tit"]?>.</h3>
+            <form role ="form"  style="width:400px;" action="conun.php?m=2"  method="POST" >
                     <input type="text" value="<?=$filac["tit"]?>" name="tit" class="form-control"><br/>
                     <input type="hidden" name="id" value="<?=$filac["id"]?>">
                     <textarea rows="3" class="form-control" name="des" ><?=$filac["des"]?></textarea><br/>
@@ -42,14 +48,15 @@ $num=mysqli_num_rows($res);
         </div>
   <?php
                 }
+  }
                 $name=$_FILES["archivo"]["name"];
                 $id=$_POST["id"];
                 $tit=$_POST["tit"];
                 $des=$_POST["des"];
                 $sqlm="UPDATE  `kalmap`.`anupor` SET  `tit` =  '$tit',`des` = '$des' WHERE  `anupor`.`id` =$id;";
-                $resm=mysqli_query($link,$sqlm);
-                echo $id;
-                echo $sqlm;
+                $resm=mysqli_query($link,$sqlm); 
+				header("Location:conun.php?a=2");
                 
-  ?>
+                
+ ?>
 
